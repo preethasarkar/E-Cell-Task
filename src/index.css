@@ -1,13 +1,273 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header{
+  display:flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #4B6BFB;
+  color: white;
+  font-size: larger;
+  z-index: 1000;
+  cursor: pointer;
+  height:5vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-left{
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+  gap:5%;
+  align-items: center;
+}
+
+.header-left > img{
+  height:20px;
+  width: 20px;
+  border-radius:50%;
+}
+
+.header-middle{
+  width: 50vw;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.header-middle > a{
+  text-decoration: none;
+  color: inherit;
+  cursor: inherit;
+}
+.header-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.shrink-into{
+  display: none;
+}
+
+#inside-toolbar{
+  display: none;
+}
+
+@media(max-width:800px){
+
+  .shrink-into{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+  }
+
+  .shrink-into > button > img{
+    height:30px;
+    width: 30px;
+  }
+
+  #inside-toolbar{
+    display: none;
+  }
+
+  #inside-toolbar > a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .header-middle{
+    display:none;
+  }
+}
+/**Hero section**/
+.hero{
+  background-color: #4B6BFB;
+  height: 25rem;
+
+}
+.inside-hero{
+
+  padding-top: 5rem;
+}
+
+.inside-hero p{
+  width: 40vw;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-div{
+  border: 0 solid #e5e7eb;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 40vw;
+}
+input:focus {
+  outline: none; /* Remove the focus outline */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove box shadow */
+}
+.search-btn {
+  background-color: #007bff; 
+  border: none; 
+  color: white;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Change color on hover */
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+input {
+  padding: 10px;
+  border: none;
+}
+
+/*Jobcard styling*/
+.card{
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  width: 40px;
+  height:40px;
+}
+
+.company{
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.company>h6{
+  white-space: nowrap;
+}
+
+
+.card-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  justify-items: center;
+  
+}
+
+.card-content{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+
+/**Modal styling**/
+/* Modal overlay covers the entire screen with a semi-transparent background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures modal is above other content */
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px; /* You can adjust the width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for effect */
+  z-index: 1001; /* Ensures the content is on top of the overlay */
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button{
+  background-color: green !important;
+  width: 50%;
+  
+}
+
+.modal-content button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
+
+.apply-button:hover{
+  background-color: darkgreen !important;
+}
+
+footer {
+  padding: 20px 0; /* Padding around the footer */
+  text-align: center; /* Center the text */
+}
+
+footer a {
+  color: #f1c40f; /* Custom link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+hr{
+  margin: 15px;
+}
+
+@media(max-width:950px){
+  .card-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+  }
+}
+
+@media(max-width:700px){
+  .hero{
+    height: 30rem;
+  }
+
+  .search-div{
+    width: 100%;
+    margin: 8px;
+  }
+
+  .card-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+  }
 }

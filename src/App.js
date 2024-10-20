@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import JobList from "./components/JobList";
+import Footer from "./components/Footer";
 
 function App() {
+
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="container-fluid m-0 p-0">
+        <div className="row">
+          <div className="col">
+            <Header />
+          </div>
+        </div>
+        <div className="row" id="target-hero">
+          <div className="col">
+            <Hero searchTerm={searchTerm} setSearchTerm={setSearchTerm} /></div>
+        </div>
+      </div>
+
+      <JobList searchTerm={searchTerm} />
+      <Footer/>
     </div>
   );
 }
