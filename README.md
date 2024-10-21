@@ -16,3 +16,12 @@
 `npm start`
 </li>
 
+## Features
+<li>Modal View of Jobs</li>
+<li>Sort jobs based on location,job role,company
+
+![Screenshot](public/assets/image1.png "San Juan Mountains")
+
+</li>
+<li>Light and Dark mode</li>
+<li>Responsive Design</li>
