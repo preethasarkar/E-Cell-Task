@@ -28,7 +28,7 @@ let job_list = [
         job_id: "19056",
         job_posting_date: "08-10-2024", //DD-MM-YYYY
         work_type: "Remote",
-        icon: "/assets/apple.svg",
+        icon: "/assets/amazon.svg",
         company: "Amazon",
         role: "Backend Developer",
         location: "Seattle",

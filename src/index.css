@@ -290,21 +290,10 @@ hr{
 }
 
 
-
-@media(max-width:700px){
-  .hero{
-    height: 30rem;
-    overflow-y: scroll;
-  }
-
-  .search-div{
-    width: 100%;
-    margin: 8px;
-  }
-
+@media(max-width:950px){
   .card-list{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     justify-items: center;
   }
@@ -341,10 +330,20 @@ hr{
   }
 }
 
-@media(max-width:950px){
+@media(max-width:700px){
+  .hero{
+    height: 30rem;
+    overflow-y: scroll;
+  }
+
+  .search-div{
+    width: 100%;
+    margin: 8px;
+  }
+
   .card-list{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     justify-items: center;
   }
