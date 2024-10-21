@@ -49,6 +49,13 @@ body {
   padding-right: 2%;
 }
 
+.header-right > button{
+  border-radius: 15px;
+  cursor: inherit;
+  color: inherit;
+  background: none;
+}
+
 .shrink-into{
   display: none;
 }
@@ -214,7 +221,7 @@ footer {
 }
 
 footer a {
-  color: #f1c40f; /* Custom link color */
+  color: black; /* Custom link color */
   text-decoration: none; /* Remove underline from links */
 }
 
@@ -267,22 +274,19 @@ hr{
 }
 
 .dark-mode footer {
-  background-color: #333;
   color: #f1c40f;
 }
 
-@media(max-width:950px){
-  .card-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    justify-items: center;
-  }
+.dark-mode footer a{
+  color:  #f1c40f;
 }
+
+
 
 @media(max-width:700px){
   .hero{
     height: 30rem;
+    overflow-y: scroll;
   }
 
   .search-div{
@@ -326,5 +330,14 @@ hr{
 
   .header-middle{
     display:none;
+  }
+}
+
+@media(max-width:950px){
+  .card-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: center;
   }
 }
