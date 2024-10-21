@@ -226,6 +226,51 @@ hr{
   margin: 15px;
 }
 
+
+/*Adding dark-mode styles*/
+
+.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: white; /* Dark mode text color */
+}
+
+.dark-mode .header {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .hero {
+  background-color: #333; /* Dark theme for hero section */
+}
+
+.dark-mode .search-div {
+  background-color: #444; /* Dark theme for search input */
+}
+
+.dark-mode .card {
+  background-color: #444; /* Dark theme for job cards */
+  color: white;
+}
+
+.dark-mode .modal-content {
+  background-color: #333; /* Dark theme for modals */
+  color: white;
+}
+
+/* Dark mode buttons */
+.dark-mode .search-btn {
+  background-color: #555;
+}
+
+.dark-mode .apply-button {
+  background-color: darkgreen !important;
+}
+
+.dark-mode footer {
+  background-color: #333;
+  color: #f1c40f;
+}
+
 @media(max-width:950px){
   .card-list{
     display: grid;

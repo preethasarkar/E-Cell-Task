@@ -6,19 +6,13 @@ function Header() {
 
   function toggleTheme() {
     const body = document.body;
-
-    if (isDarkTheme) {
-      // Remove dark theme classes
-      body.classList.remove("bg-dark", "text-light");
-      body.classList.add("bg-light", "text-dark");
-    } else {
-      // Apply dark theme classes
-      body.classList.remove("bg-light", "text-dark");
-      body.classList.add("bg-dark", "text-light");
-    }
-
-    // Update state to reflect the current theme
     setIsDarkTheme(!isDarkTheme);
+
+    if (!isDarkTheme) {
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+    }
   }
 
   function toggleDisplay() {
