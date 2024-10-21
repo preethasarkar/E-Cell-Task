@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .header{
   display:flex;
   justify-content: space-between;
@@ -40,47 +44,13 @@
 .header-right{
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  
   padding-right: 2%;
 }
 
 .shrink-into{
   display: none;
-}
-
-#inside-toolbar{
-  display: none;
-}
-
-@media(max-width:800px){
-
-  .shrink-into{
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #333;
-  }
-
-  .shrink-into > button > img{
-    height:30px;
-    width: 30px;
-  }
-
-  #inside-toolbar{
-    display: none;
-  }
-
-  #inside-toolbar > a{
-    text-decoration: none;
-    color: white;
-  }
-
-  .header-middle{
-    display:none;
-  }
 }
 /**Hero section**/
 .hero{
@@ -136,6 +106,11 @@ input {
 }
 
 /*Jobcard styling*/
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card{
   border: 1px solid black;
   width: 300px;
@@ -216,7 +191,10 @@ input {
 .apply-button{
   background-color: green !important;
   width: 50%;
-  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content button:hover {
@@ -269,5 +247,36 @@ hr{
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     justify-items: center;
+  }
+}
+
+@media(max-width:800px){
+
+  .shrink-into{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+  }
+
+  .shrink-into > button > img{
+    height:30px;
+    width: 30px;
+  }
+
+  #inside-toolbar{
+    display: none;
+  }
+
+  #inside-toolbar > a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .header-middle{
+    display:none;
   }
 }

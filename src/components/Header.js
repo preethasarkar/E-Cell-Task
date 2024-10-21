@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
 
-  function toggleDisplay(){
-    const cont=document.getElementById("inside-toolbar");
-    console.log(cont);
-    if(cont.style.display==='none'){
-      cont.style.display='flex';
-      cont.style.flexDirection='column';
-      
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  function toggleTheme() {
+    const body = document.body;
+
+    if (isDarkTheme) {
+      // Remove dark theme classes
+      body.classList.remove("bg-dark", "text-light");
+      body.classList.add("bg-light", "text-dark");
+    } else {
+      // Apply dark theme classes
+      body.classList.remove("bg-light", "text-dark");
+      body.classList.add("bg-dark", "text-light");
     }
 
-    else{
-      cont.style.display='none';
+    // Update state to reflect the current theme
+    setIsDarkTheme(!isDarkTheme);
+  }
+
+  function toggleDisplay() {
+    const cont = document.getElementById("inside-toolbar");
+    console.log(cont);
+    if (cont.style.display === 'none') {
+      cont.style.display = 'flex';
+      cont.style.flexDirection = 'column';
+
+    }
+
+    else {
+      cont.style.display = 'none';
     }
   }
 
@@ -31,7 +50,8 @@ function Header() {
 
 
       <div class="header-right">
-        Post a Job
+        {/*Change theme*/}
+        <button onClick={toggleTheme}>{isDarkTheme ? "Light Theme" : "Dark Theme"}</button>
       </div>
 
       <div className="shrink-into">

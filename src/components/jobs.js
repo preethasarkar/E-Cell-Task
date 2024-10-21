@@ -69,8 +69,8 @@ let job_list = [
         role: "DevOps Engineer",
         location: "Los Angeles",
         salary: "135000 USD/Year",
-        eligibilty: "2026 passouts",
-        role_description: "",
+        eligibilty: "2026 and 2027 BTech UG batch",
+        role_description: "As a DevOps Engineer at Netflix, you will be responsible for streamlining our development and release processes, ensuring the availability, scalability, and security of our applications. You will work closely with development, operations, and quality assurance teams to create automated workflows, manage cloud infrastructure, and resolve any deployment issues.",
     },
     {
         job_id: "14590",
@@ -81,8 +81,8 @@ let job_list = [
         role: "Data Scientist",
         location: "Menlo Park",
         salary: "150000 USD/Year",
-        eligibilty: "2026 passouts",
-        role_description: "",
+        eligibilty: "BTech 2026 passouts",
+        role_description: "As a Data Scientist at Facebook, you will be responsible for analyzing large datasets, building predictive models, and delivering insights that inform key business decisions. You will collaborate with cross-functional teams, including product, engineering, and marketing, to identify opportunities where data can enhance performance and provide meaningful value. You will also be responsible for researching new techniques and tools to further advance our data capabilities.",
     },
     {
         job_id: "14324",
@@ -94,7 +94,7 @@ let job_list = [
         location: "San Francisco",
         salary: "125000 USD/Year",
         eligibilty: "2026 passouts",
-        role_description: "",
+        role_description: "As a Mobile App Developer at Uber, you will be responsible for developing, testing, and maintaining mobile applications that deliver seamless user experiences. You will work closely with our design, product, and backend teams to bring creative ideas to life while ensuring optimal performance and usability. ",
     },
     {
         job_id: "10410",
@@ -111,14 +111,14 @@ let job_list = [
     {
         job_id: "24632",
         job_posting_date: "08-10-2024", //DD-MM-YYYY
-        work_type: "Remote",
+        work_type: "On-site",
         icon: "/assets/tcs.svg",
         company: "Tata Consultancy Services (TCS)",
         role: "Java Developer",
         location: "Mumbai",
         salary: "10 LPA",
-        eligibilty: "2026 passouts",
-        role_description: "",
+        eligibilty: "BTech Cse 2024,2025,2026 batch",
+        role_description: "You will be responsible for designing, developing, and maintaining scalable Java applications. You’ll collaborate with cross-functional teams to create software that meets the needs of our clients. Your role will involve writing efficient code, conducting testing, debugging, and deploying applications, all while ensuring the highest standards in code quality and performance.",
     },
     {
         job_id: "25342",
@@ -147,38 +147,38 @@ let job_list = [
     {
         job_id: "17654",
         job_posting_date: "08-10-2024", //DD-MM-YYYY
-        work_type: "Remote",
+        work_type: "On-site",
         icon:"/assets/cognizant.svg",
         company: "Cognizant",
         role: "Data Analyst",
         location: "Pune",
         salary: "13 LPA",
-        eligibilty: "2026 passouts",
-        role_description: "",
+        eligibilty: "BTech, MTech 2026 batch",
+        role_description: "You will be responsible for collecting, analyzing, and interpreting large datasets to identify trends, patterns, and insights that can help our team make informed business decisions. You will collaborate with various departments to support their data needs, providing accurate reporting and actionable insights. Your role is crucial in turning data into meaningful information to drive business performance.",
     },
     {
         job_id: "18989",
         job_posting_date: "08-10-2024", //DD-MM-YYYY
-        work_type: "Remote",
+        work_type: "On-site",
         icon: "/assets/flipkart.svg",
         company: "Flipkart",
         role: "Product Manager",
         location: "Bangalore",
         salary: "22 LPA",
-        eligibilty: "2026 passouts",
-        role_description: "",
+        eligibilty: "Bachelor’s degree in Data Science, Statistics, Computer Science, or a related field.",
+        role_description: "As a Data Analyst at Flipkart, you will be responsible for collecting, analyzing, and interpreting large datasets to help inform business decisions. You will work with cross-functional teams to provide actionable insights, identify trends, and help optimize processes. This role requires strong analytical skills, attention to detail, and the ability to communicate findings clearly to both technical and non-technical stakeholders.",
     },
     {
         job_id: "12674",
         job_posting_date: "08-10-2024", //DD-MM-YYYY
-        work_type: "Remote",
+        work_type: "On-site",
         icon: "/assets/swiggy.svg",
         company: "Swiggy",
         role: "Machine Learning Engineer",
         location: "Gurgaon",
         salary: "20 LPA",
-        eligibilty: "2026 passouts",
-        role_description: "",
+        eligibilty: "Bachelor’s or Master’s degree in Computer Science, Data Science, Machine Learning, or a related field.",
+        role_description: "As a Machine Learning Engineer, you will be responsible for designing, implementing, and optimizing machine learning models and algorithms. You will collaborate with data scientists, software engineers, and product managers to develop scalable ML solutions that solve real-world problems. Your expertise will help us turn data into actionable insights, enhancing our products and services.",
     },
     {
         job_id: "23114",
@@ -189,21 +189,23 @@ let job_list = [
         role: "Backend Developer",
         location: "Delhi",
         salary: "18 LPA",
-        eligibilty: "2026 passouts",
+        eligibilty: "Bachelor's Degree in any engineering field",
         role_description: "As a backend developer, you will be responsible for designing, developing, and maintaining the server-side components of our web applications. You will work closely with front-end developers, DevOps, and other team members to deliver high-performance, scalable, and secure applications that power our user-facing products. If you are passionate about backend technologies, data management, and API development, we’d love to meet you!",
     },
     {
         job_id: "10123",
         job_posting_date: "08-10-2024", //DD-MM-YYYY
-        work_type: "Remote",
+        work_type: "On-site",
         icon: "/assets/nvidia.svg",
         company: "Nvidia",
         role: "Frontend Developer",
         location: "Bangalore",
         salary: "32 LPA",
-        eligibilty: "2026 passouts",
-        role_description: "",
-    }
+        eligibilty: "Bachelor’s degree in Computer Science, Web Development, or a related field (or equivalent practical experience).",
+        role_description: "As a Frontend Developer, you will be responsible for building and maintaining user interfaces for our web applications. You will collaborate with designers, backend developers, and product managers to create responsive, user-friendly, and visually appealing applications. Your expertise in frontend technologies will play a critical role in delivering a seamless user experience.",
+
+
+    },
 ];
 
 export default job_list;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 function JobCard(props) {
     const [modal, setModal] = useState(false);
@@ -16,7 +17,7 @@ function JobCard(props) {
                     <h6>{props.company}</h6>
                 </div>
                 <h5>{props.role}</h5>
-                <h6>{props.location}</h6>
+                <h6 className="location"><LocationOnIcon style={{fontSize:'medium'}} /> {props.location}</h6>
                 <p>{props.salary}</p>
             </div>
             {modal && <Modal {...props} setState={setModal} />}
