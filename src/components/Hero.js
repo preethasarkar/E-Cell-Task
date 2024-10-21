@@ -17,8 +17,8 @@ function Hero(props) {
 
     return (
         <div className="hero">
-            <div className="px-4 text-center inside-hero">
-                <h1 className="display-5 fw-bold text-body-emphasis">Your ultimate job search companion</h1>
+            <div className="px-3 text-center inside-hero mb-3 mt-2 text-white">
+                <h1 className="display-5 fw-bold text-white">Your ultimate job search companion</h1>
                 <div className="mx-auto d-flex justify-content-center">
                     <p className="lead mb-4 ">Are you looking for the perfect job or the ideal candidate? Find your dream job with thousands of job postings across industries.</p>
                 </div>
