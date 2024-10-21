@@ -20,8 +20,12 @@
 <li>Modal View of Jobs</li>
 <li>Sort jobs based on location,job role,company
 
-![Screenshot](public/assets/image1.png "San Juan Mountains")
+![Screenshot](public/assets/image1.png "Screenshot")
 
 </li>
-<li>Light and Dark mode</li>
+<li>Light and Dark mode
+
+![Screenshot!](public/assets/image2.png "Screenshot")
+
+</li>
 <li>Responsive Design</li>
