@@ -126,6 +126,7 @@ input {
   width: 300px;
   display: flex;
   justify-content: center;
+  
 }
 
 .logo{
@@ -161,6 +162,13 @@ input {
   align-items: center;
   justify-content: center;
   gap: 3%;
+  transition: all 0.3s ease;
+}
+
+.card-content:hover{
+  background-color: #f5f5f5;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 /**Modal styling**/
